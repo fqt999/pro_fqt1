@@ -20,14 +20,16 @@
           <li class="layui-nav-item">
             <!-- 右侧导航栏上面头像 -->
             <a href="javascript:;" class="userinfo">
-              <img src="http://t.cn/RCzsdCq" class="layui-nav-img" />
+              <img src="" class="layui-nav-img" />
               <span class="text-avatar">A</span>
               个人中心
             </a>
             <dl class="layui-nav-child">
-              <dd><a href="">基本资料</a></dd>
+              <dd>
+                <a href="/user/user_info.html" target="fm">基本资料</a>
+              </dd>
               <dd><a href="">更换头像</a></dd>
-              <dd><a href="">重置密码</a></dd>
+              <dd><a href="/user/user_pwd.html" target="fm">重置密码</a></dd>
             </dl>
           </li>
           <li class="layui-nav-item">
@@ -40,7 +42,8 @@
         <div class="layui-side-scroll">
           <!-- 左侧侧边栏上面头像 -->
           <div class="userinfo">
-            <img src="http://t.cn/RCzsdCq" class="layui-nav-img" />
+            <img src="" class="layui-nav-img" />
+            <!-- <img src="images/更换头像.jpg" style="zoom:50%;" /> -->
             <span class="text-avatar">A</span>
             <span id="welcome">欢迎 ***</span>
           </div>
@@ -48,14 +51,14 @@
           <ul class="layui-nav layui-nav-tree" lay-shrink="all">
             <li class="layui-nav-item layui-this">
               <a href="/home/dashboard.html" target="fm"
-                ><span class="iconfont icon-home"></span>首页</a
+                ></span>首页</a
               >
             </li>
             <li class="layui-nav-item">
               <a class="" href="javascript:;">文章管理</a>
               <dl class="layui-nav-child">
                 <dd>
-                  <a href="javascript:;">文章类别</a>
+                  <a href="/article/art_cate.html" target="fm">文章类别</a>
                 </dd>
                 <dd>
                   <a href="javascript:;">文章列表</a>
@@ -69,13 +72,15 @@
               <a href="javascript:;">个人中心</a>
               <dl class="layui-nav-child">
                 <dd>
-                  <a href="javascript:;">基本资料</a>
+                  <a href="/user/user_info.html" target="fm"
+                    ></i>基本资料</a
+                  >
                 </dd>
                 <dd>
-                  <a href="javascript:;">更换头像</a>
+                  <a href="/user/user_avatar.html" target="fm">更换头像</a>
                 </dd>
                 <dd>
-                  <a href="javascript:;">重置密码</a>
+                  <a href="/user/user_pwd.html" target="fm">重置密码</a>
                 </dd>
               </dl>
             </li>
@@ -86,7 +91,7 @@
       <div class="layui-body">
         <!-- 内容主体区域 -->
         <!-- <div style="padding: 15px">内容主体区域</div> -->
-        <iframe name="fm" src="" frameborder="0"></iframe>
+        <iframe name="fm" src="/home/dashboard.html" frameborder="0"></iframe>
       </div>
 
       <div class="layui-footer">
